@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}body{background:#fbfaf8}.hero__container{max-width:390px;margin-left:auto;margin-right:auto;padding-left:10px;padding-right:10px}.hero__top{display:grid;grid-template-columns:1fr 160px 1fr;align-items:start;max-width:390px;margin:0 auto;margin-top:-2px;margin-bottom:-20px}.hero__top__left,.hero__top__right{display:flex;flex-direction:column;align-items:start;justify-content:center;margin-left:auto;margin-right:auto;min-height:60px;color:#000;font-family:Montserrat,Arial,Helvetica,sans-serif;font-size:14px;font-weight:600;line-height:110%;text-align:center}.hero__top__left .hero__top__text,.hero__top__right .hero__top__text{font-family:Montserrat,sans-serif;font-weight:400;font-size:14px;line-height:100%}.hero__top__left span,.hero__top__right span{font-family:Montserrat,sans-serif;font-weight:700;font-size:14px;line-height:100%;text-align:right;text-transform:uppercase}.hero__top__center{display:flex;align-items:center;padding-top: 8px; justify-content:center;min-height:48px;border-top:0;border-radius:12px;background:#626262}.hero__top__border{margin-top:-10px;border:.64px solid;border-image-source:linear-gradient(358.62deg,#46382B -9.94%,rgb(156 156 156 / .5) 59.7%),linear-gradient(180deg,rgb(0 0 0 / .2) 62.5%,#fff0 100%);padding:3px;border-radius:14px}.hero__top__center .hero__top__text{font-family:Montserrat,sans-serif;font-weight:600;font-size:16px;line-height:110.00000000000001%;white-space:nowrap;color:#fff}.hero__center{margin-top:24px}.hero__center__title{font-family:Buyan,sans-serif;font-weight:700;font-size:clamp(22px, 6vw, 28px);line-height:120%;text-align:center;color:#000;margin-bottom:6px}.hero__center__text{font-family:Montserrat,sans-serif;font-weight:600;font-size:clamp(14px, 4vw, 16px);line-height:110.00000000000001%;text-transform:uppercase;text-align:center;color:#FFF;background-color:#626262;padding:8px 21px;max-width:298px;width:100%;margin-left:auto;margin-right:auto;border-radius:23px;margin-bottom:16px}.logo{display:flex;margin-left:auto;margin-right:auto;height:auto;max-width:369px;width:100%;margin-bottom:16px}.hero__btn__wrap{position:relative;width:min(calc(100% - 24px), 366px);height:86px;margin:0 auto 8px;margin-bottom:24px}.btn__img{display:none}.btn{position:absolute;inset:0;z-index:1;display:flex;align-items:center;justify-content:center;gap:14px;width:100%;height:100%;border:0;border-radius:43px;background:#ffd38d;box-shadow:0 4px 0 #ffc57c,0 10px 37px rgb(245 188 98 / .5),inset 15px 10px 11px rgb(255 255 255 / .3),inset -15px -12px 12px rgb(255 255 255 / .25);color:#7e3500;cursor:pointer;font-family:Buyan,Impact,sans-serif;font-weight:700;line-height:1;letter-spacing:0;text-transform:uppercase;white-space:nowrap}.btn span{font-size:clamp(20px, 7vw, 28px)}.btn:active{transform:translateY(1px)}.btn__icon{flex:0 0 auto;width:22px;height:28px}.hero__center__flex{position:relative;display:flex;align-items:flex-start;justify-content:center;width:min(calc(100% - 24px), 366px);margin-top:0;margin-left:auto;margin-right:auto;margin-bottom:10px}.timer-container{flex:0 0 auto}.timer{display:flex;align-items:center;gap:11px;margin:0;color:#fff;font-family:Montserrat,Arial,Helvetica,sans-serif;font-size:30px;font-weight:700;font-style:normal;line-height:110%;letter-spacing:0}.timer__value{display:inline-flex;align-items:center;justify-content:center;max-width:60px;height:45px;padding:6px 12px;border-radius:10px;background:#656565;box-shadow:inset 0 1px 0 rgb(255 255 255 / .18)}.timer__colon{color:#656565;font-size:34px;font-weight:900;line-height:44px;border-radius:50px}.arrow{position:absolute;right:50px;top:-14px;width:39px;height:41px}.hero__bottom{max-width:326px;width:100%;margin:18px auto 0;margin-bottom:18px}.hero__bottom__title{margin:0 0 10px;color:#626262;font-family:Buyan,Impact,sans-serif;font-size:clamp(25px, 6vw, 30px);font-weight:700;line-height:100%;letter-spacing:0;text-align:center;text-transform:uppercase}.hero__bottom__inner{display:grid;gap:7px}.hero__bottom__item{display:flex;align-items:center;min-height:64px;padding:5px 12px 5px 5px;border:1px solid #7d7d7d;border-radius:17px;background:#fff}.hero__bottom__img{flex:0 0 auto;width:62px;height:62px;object-fit:contain;margin-right:10px;background-color:#FFF1DB;border-radius:14px;width:61;height:61px}.hero__bottom__text{font-family:Montserrat,sans-serif;font-weight:400;font-size:clamp(14px, 4vw, 16px);line-height:110.00000000000001%}.hero__bottom__text b{font-weight:700}@media (max-width:374px){.btn{gap:10px;font-size:24px}.timer{gap:8px}.arrow{right:34px;top:-12px;width:32px;height:34px}}
+  </style>
+  <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="./css/main.css" />
+  </noscript>
+
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__top">
+        <div class="hero__top__left">
+          <p class="hero__top__text">Kuni:</p>
+          <span>23-MAY</span>
+        </div>
+        <div class="hero__top__border">
+          <div class="hero__top__center">
+            <p class="hero__top__text">Onlayn Taqdimot</p>
+          </div>
+        </div>
+        <div class="hero__top__right">
+          <p class="hero__top__text">Vaqti:</p>
+          <span>20:00</span>
+        </div>
+      </div>
+      <div class="hero__center">
+        <h2 class="hero__center__title">
+          yopiq auksionimizda Mebellarni <br> zavod narxida olishingiz mumkin
+        </h2>
+        <p class="hero__center__text">Siz uchun ajoyib imkoniyat</p>
+        <img src="./images/logo.avif" width="369" height="327" loading="lazy" decoding="async" alt="Logo" class="logo">
+        <div class="hero__btn__wrap">
+          <button class="btn registerBtn">
+            <span>TAQDIMOTDA QATNASHISH</span>
+            <img src="./images/submit.svg" width="22" height="28" loading="lazy" decoding="async" alt=""
+              aria-hidden="true" class="btn__icon">
+          </button>
+          <img src="./images/btn.svg" width="366" height="86" loading="lazy" decoding="async" alt="BtnImg"
+            class="btn__img">
+        </div>
+        <div class="hero__center__flex">
+          <div class="timer-container">
+            <p class="timer" id="timer">
+              <span class="timer__value">01</span>
+              <span class="timer__colon">:</span>
+              <span class="timer__value">59</span>
+            </p>
+          </div>
+          <img src="./images/arrow.svg" width="35" height="40" loading="lazy" decoding="async" alt="Arrow"
+            class="arrow">
+        </div>
+      </div>
+      <div class="hero__bottom">
+        <h2 class="hero__bottom__title">Qatnashuvchilar uchun:</h2>
+        <div class="hero__bottom__inner">
+          <div class="hero__bottom__item">
+            <img src="./images/img__1.avif" width="62" height="62" loading="lazy" decoding="async" alt=""
+              class="hero__bottom__img">
+            <p class="hero__bottom__text"><b>1 mlnlik</b> Vaucher</p>
+          </div>
+          <div class="hero__bottom__item">
+            <img src="./images/img__2.avif" width="62" height="62" loading="lazy" decoding="async" alt=""
+              class="hero__bottom__img">
+            <p class="hero__bottom__text"><b>Zamonaviy</b> va <b>sifatli</b> mebellar</p>
+          </div>
+          <div class="hero__bottom__item">
+            <img src="./images/img__3.avif" width="62" height="62" loading="lazy" decoding="async" alt=""
+              class="hero__bottom__img">
+            <p class="hero__bottom__text">Professional <b>jamoa</b> va <b>kafolat</b></p>
+          </div>
+          <div class="hero__bottom__item">
+            <img src="./images/img__4.avif" width="62" height="62" loading="lazy" decoding="async" alt=""
+              class="hero__bottom__img">
+            <p class="hero__bottom__text">Mebelni uyingizga mutlaqo <b>bepulga yetkazib beramiz</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__btn__wrap">
+        <button class="btn registerBtn">
+          <span>TAQDIMOTDA QATNASHISH</span>
+          <img src="./images/submit.svg" width="22" height="28" loading="lazy" decoding="async" alt=""
+            aria-hidden="true" class="btn__icon">
+        </button>
+        <img src="./images/btn.svg" width="366" height="86" loading="lazy" decoding="async" alt="BtnImg"
+          class="btn__img">
+      </div>
+    </div>
+  </section>
+
+  <div id="registrationModal" class="homeModal" style="display: none">
+    <div class="homeModalOverlay"></div>
+    <div class="homeFormContainer">
+      <button class="closeButton" id="closeModalBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+          <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div class="homeFormTop">
+        <h1 class="homeFormTopTitle">
+          Ro'yxatdan o'tish uchun <br> ma'lumotlaringizni kiriting!
+        </h1>
+      </div>
+      <form id="registrationForm" name="contact-form">
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="name">Ismingiz:</label>
+          <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Ismingizni kiriting"
+            autocomplete="name" />
+          <p class="homeFormErrorText" id="nameError" style="display: none">❌ Ismingizni kiriting!</p>
+        </div>
+
+        <div class="HomeFormRow">
+          <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
+          <div class="phone-input-container">
+            <button type="button" class="selected-country" id="selectedCountry">
+              <div id="selectedCountryFlag" style="display: flex; align-items: center;"></div>
+              <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+              <span class="selected-code" id="selectedCountryCodeText">+998</span>
+            </button>
+            <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
+            <div class="phone-field" style="flex: 1;">
+              <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric"
+                placeholder="88 888 88 88" autocomplete="tel"
+                style="border: none; background-color: transparent; padding-left: 5px; width: 100%;" />
+            </div>
+          </div>
+          <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
+        </div>
+
+        <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
+      </form>
+    </div>
+  </div>
+  
+  <script defer src="./js/phoneFormatter.js"></script>
+  <script defer src="./js/app.js"></script>
+
+</body>
+
+</html>
